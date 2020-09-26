@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #ffab6f;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  width: 100%;
+  background-color: #fab98b;
+}
+
+div {
+  border-radius: 5px;
+  background-color:#BEDEC0;
+  padding: 20px;
+}
+</style>
+
+<body>
+
+<h2>How are you? Please Let me know you!</h2>
+
+<div>
+  <form name="form1" action="/form_ok.php" onsubmit="return validateForm()"  method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <optgroup label="Asia">
+        <option value="korea">Korea</option>
+        <option value="japan">Japan</option>
+        <option value="china">China</option>
+      </optgroup>
+      <optgroup label="Europe">
+        <option value="france">France</option>
+        <option value="italy">Italy</option>
+        <option value="spain">Spain</option>
+      </optgroup>
+    </select> <br><br>
+
+    <label for="gender" >Sex :</label>
+
+    <label for="gender">Male</label>
+    <input type="radio" id="gender" name="gender" value="남자" required>
+                    
+    <label for="gender">Female</label>
+    <input type="radio" id="gender" name="gender" value="여자" required> <br><br>
+
+    <label for="birthday">Birth :</label>
+    <input type="date" id="birthday" name="birthday" required> <br><br>
+
+    <label for="homepage">Homepage : </label>
+    <input type="url" id="homepage" name="homepage" required><br><br>
+
+    <label for="favcolor">Personal Color? :</label>
+    <input type="color" id="favcolor" name="favcolor" value="#e6c570"><br><br>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<script>
+    function validateForm() {
+        var fname = document.form1.firstname;
+        if (fname.value == "") {
+            alert("first name을 입력하세요");
+            fname.focus();
+            return false;
+        }
+        var lname = document.form1.lname;
+        if (lname.value == "") {
+            alert("last name을 입력하세요");
+            lname.focus();
+            return false;
+        }   
+        if (lname.value.length < 2) {
+            alert("last name은 2글자이상 입력하세요");
+            lname.focus();
+            return false;
+        }
+    }
+</script>
+
+</body>
+
+</body>
+</html>
