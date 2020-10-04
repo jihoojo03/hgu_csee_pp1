@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.css" />
+    <style>
+      @font-face {
+        font-family: "Cafe24Oneprettynight";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      * {
+        box-sizing: border-box;
+        font-family: "Cafe24Oneprettynight";
+      }
+      video {
+        width: 100%;
+        height: auto;
+      }
+
+      .row:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      /*mobile*/
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+        width: 100%;
+      }
+
+      /*tablet*/
+      @media only screen and (min-width: 768px) {
+        .col-s-1 {
+          width: 10%;
+        }
+        .col-s-2 {
+          width: 20%;
+        }
+        .col-s-3 {
+          width: 30%;
+        }
+        .col-s-4 {
+          width: 40%;
+        }
+        .col-s-5 {
+          width: 50%;
+        }
+        .col-s-6 {
+          width: 60%;
+        }
+        .col-s-7 {
+          width: 70%;
+        }
+        .col-s-8 {
+          width: 80%;
+        }
+        .col-s-9 {
+          width: 90%;
+        }
+        .col-s-10 {
+          width: 100%;
+        }
+        video {
+          height: 500px;
+        }
+      }
+
+      /*pc*/
+      @media only screen and (min-width: 800px) {
+        .col-1 {
+          width: 10%;
+        }
+        .col-2 {
+          width: 20%;
+        }
+        .col-3 {
+          width: 30%;
+        }
+        .col-4 {
+          width: 40%;
+        }
+        .col-5 {
+          width: 50%;
+        }
+        .col-6 {
+          width: 60%;
+        }
+        .col-7 {
+          width: 70%;
+        }
+        .col-8 {
+          width: 80%;
+        }
+        .col-9 {
+          width: 90%;
+        }
+        .col-10 {
+          width: 100%;
+        }
+      }
+
+      html {
+        background-color: #ededeb;
+      }
+
+      .header {
+        background-color: #5b7777;
+        color: #ffffff;
+        padding: 5px;
+        font-size: 20px;
+      }
+
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #8aa5a1;
+        color: #ffffff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      .menu li:hover {
+        background-color: #5b7777;
+      }
+
+      .aside {
+        background-color: #8aa5a1;
+        padding: 15px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      .plus {
+        text-align: center;
+      }
+
+      .footer {
+        background-color: #8aa5a1;
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Chania</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-2 col-s-3 menu">
+        <ul>
+          <li><i class="fas fa-plane"></i> The Flight</li>
+          <li><i class="fas fa-hotel"></i> The City</li>
+          <li><i class="fas fa-umbrella-beach"></i> The Island</li>
+          <li><i class="fas fa-map"></i> The travel</li>
+          <li><i class="fas fa-utensils"></i> The Food</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-s-7">
+        <h1>The City</h1>
+        <p>
+          Chania is the capital of the Chania region on the island of Crete. The
+          city can be divided in two parts, the old town and the modern city.
+        </p>
+        <div class="videoSize">
+          <video width="400" controls>
+            <source src="sample-mp4-file.mp4" type="video/mp4" />
+            <source src="sample-mp4-file.ogv" type="video/ogg" />
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </div>
+
+      <div class="col-2 col-s-10">
+        <div class="aside">
+          <h2>What?</h2>
+          <p>Chania is a city on the island of Crete.</p>
+          <h2>Where?</h2>
+          <p>Crete is a Greek island in the Mediterranean Sea.</p>
+          <h2>How?</h2>
+          <p>You can reach Chania airport.</p>
+        </div>
+
+        <div class="plus">
+          <br />
+          <br />
+          <br />
+          <img src="tree.png" alt="My Image" width="100%;" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Resize the browser window to see how the content respond to the
+        resizing.
+      </p>
+    </div>
+  </body>
+</html>

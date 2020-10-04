@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      video {
+        width: 100%;
+        height: auto;
+      }
+
+      .row:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 600px) {
+        .col-s-1 {
+          width: 10%;
+        }
+        .col-s-2 {
+          width: 20%;
+        }
+        .col-s-3 {
+          width: 30%;
+        }
+        .col-s-4 {
+          width: 40%;
+        }
+        .col-s-5 {
+          width: 50%;
+        }
+        .col-s-6 {
+          width: 60%;
+        }
+        .col-s-7 {
+          width: 70%;
+        }
+        .col-s-8 {
+          width: 80%;
+        }
+        .col-s-9 {
+          width: 90%;
+        }
+        .col-s-10 {
+          width: 100%;
+        }
+        img {
+          height: 400px;
+        }
+      }
+
+      @media only screen and (min-width: 768px) {
+        .col-1 {
+          width: 10%;
+        }
+        .col-2 {
+          width: 20%;
+        }
+        .col-3 {
+          width: 30%;
+        }
+        .col-4 {
+          width: 40%;
+        }
+        .col-5 {
+          width: 50%;
+        }
+        .col-6 {
+          width: 60%;
+        }
+        .col-7 {
+          width: 70%;
+        }
+        .col-8 {
+          width: 80%;
+        }
+        .col-9 {
+          width: 90%;
+        }
+        .col-10 {
+          width: 100%;
+        }
+        img {
+          height: 300px;
+        }
+      }
+
+      html {
+        font-family: "Lucida Sans", sans-serif;
+      }
+
+      .header {
+        background-color: #ffab6f;
+        color: #ffffff;
+        padding: 15px;
+        height: 130px;
+      }
+
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #acc9ae;
+        color: black;
+        font-size: 20px;
+        box-shadow: 0 1px 3px rgba(255, 115, 115, 0.12),
+          0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      .menu li:hover {
+        background-color: #0099cc;
+        color: white;
+      }
+
+      .aside {
+        background-color: #acc9ae;
+        padding: 15px;
+        color: black;
+        text-align: right;
+        font-size: 16px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      .footer {
+        background-color: #0099cc;
+        color: #ffffff;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Jihooni</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-2 col-s-3 menu">
+        <ul>
+          <li>The Favorite</li>
+          <li>The Hobby</li>
+          <li>The Movie</li>
+          <li>The Food</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-s-7">
+        <h1>The Jihooni</h1>
+        <p>안녕하세욥 :)</p>
+        <img src="jihooni.jpg" />
+      </div>
+
+      <div class="col-2 col-s-10">
+        <div class="aside">
+          <h2>What?</h2>
+          <p>아 치킨 먹고 싶다</p>
+          <h2>What???</h2>
+          <p>채점하시는 TA분들 고생 많으십니당</p>
+          <h2>What...?</h2>
+          <p>추석 연휴기간 너무 기대되네욯ㅎㅎㅎ</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Resize the browser window to see how the content respond to the
+        resizing.
+      </p>
+    </div>
+  </body>
+</html>
